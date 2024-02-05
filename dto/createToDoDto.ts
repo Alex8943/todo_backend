@@ -1,3 +1,5 @@
-export default interface CreateTodoDto {
+interface CreateTodoDto {
     title: string;
 }
+
+export default CreateTodoDto;
