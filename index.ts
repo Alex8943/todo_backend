@@ -1,10 +1,12 @@
 import express from "express";
+import dbConn from "./dbConnection/dbConn"
 
 const app = express();
 
+dbConn();
 
 app.get("/", (req, res) => {
-    res.send("Hello World + 1");
+    res.send("Hello World");
 })
 
 
