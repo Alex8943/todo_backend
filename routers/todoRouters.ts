@@ -1,7 +1,7 @@
 import { Router } from "express";
 import Todo from "../models/todo";
 //import CreateTodoDTO from "../dto/createToDoDTO";
-import createTodoDTO from "../dto/createToDoDTO";
+import CreateTodoDto from '../dto/createToDoDTO';
 
 const todoRouter = Router();
 
@@ -15,7 +15,7 @@ todoRouter.get("/", async (req, res) => {
 });
 
 todoRouter.post("/", async (req, res) => {
-  const { title } = req.body as createTodoDTO;
+  const { title } = req.body as CreateTodoDto;
   const todo = new Todo({ title: title });
 
   try {
