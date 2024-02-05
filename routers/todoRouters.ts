@@ -25,6 +25,8 @@ todoRouter.post("/", async (req, res) => {
   }
 });
 
+/*
+
 todoRouter.delete("/:todoId", async (req, res) => {
   try {
     const removedTodo = await Todo.deleteOne({ _id: req.params.todoId });
@@ -33,5 +35,7 @@ todoRouter.delete("/:todoId", async (req, res) => {
     res.json({ message: error });
   }
 });
+
+*/
 
 export default todoRouter;
